@@ -6,7 +6,7 @@ function useWeatherFetch(cityCode = 308526) {
   const [days, setDays] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const url = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/";
+  const url = "https://dataservice.accuweather.com/forecasts/v1/daily/5day/";
 
   useEffect(() => {
     async function getDays() {
