@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_KEY = "HYQHGXCVqtJAwG1gQnJxdOQODJsoQ3tc";
+const API_KEY = "RMEjHXc7YdISe6lk69Q8HaGsh0NYrGMB";
 
 function useWeatherFetch(cityCode = 308526) {
   const [days, setDays] = useState([]);
@@ -11,7 +11,7 @@ function useWeatherFetch(cityCode = 308526) {
   useEffect(() => {
     async function getDays() {
       setIsLoading(true);
-      const response = await fetch(`${url}${cityCode}?apikey=${API_KEY}`);
+      const response = await fetch(`${url}${cityCode}?apikey=${API_KEY}&metric=true`);
       const data = await response.json();
       setDays(data?.DailyForecasts);
       setIsLoading(false);

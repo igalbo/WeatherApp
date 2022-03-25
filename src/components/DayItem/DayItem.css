@@ -1,0 +1,36 @@
+.day-box {
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px gray;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.day-box:hover {
+    background-color:darksalmon;
+}
+
+.day-icon {
+    height: 100%;     
+}
+
+.day-max {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.day-min {
+    font-size: 18px;
+    color: gray;
+}
+
+.day-text {
+    margin: auto;
+    font-size: 18px;
+}
